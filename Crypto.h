@@ -11,7 +11,7 @@
 #define AES_BLOCK_SIZE 16
 #define AES_KEY_SIZE   32
 
-#define SIGNATURE		"n0nx0r.V1"
+#define SIGNATURE		"테스트 시그니처"
 #define SIGNATURE_SIZE	sizeof(SIGNATURE)
 
 using namespace Security;
@@ -20,4 +20,5 @@ void ClearInputBuffer();
 bool EncryptLargeFileWithCrypto(CCrypto &hCrypto, const char *pszInputFile, const char *pszOutputFile);
 bool DecryptLargeFileWithCrypto(CCrypto &hCrypto, const char *pszInputFile, const char *pszOutputFile);
 void PrintProgress(int nPercent);
+
 
